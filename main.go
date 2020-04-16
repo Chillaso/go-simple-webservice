@@ -3,10 +3,10 @@ package main
 import (
 	"net/http"
 
-	"github.com/chillaso/go-webservice/controller"
+	"github.com/chillaso/go-webservice/controllers"
 )
 
 func main() {
-	controller.RegisterControllers()
+	controllers.RegisterControllers()
 	http.ListenAndServe(":3000", nil)
 }
